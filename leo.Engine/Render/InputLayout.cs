@@ -22,9 +22,9 @@ namespace leo.Platform.Render.Vertex
     [StructLayout(LayoutKind.Sequential)]
     public struct Element
     {
-        Usage Usage { get; set; }
-        byte UsageIndex { get; set; }
-        EFormat Format { get; set; }
+        public Usage Usage { get; set; }
+        public byte UsageIndex { get; set; }
+        public EFormat Format { get; set; }
     }
 
 }

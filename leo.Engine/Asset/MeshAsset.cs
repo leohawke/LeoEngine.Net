@@ -9,14 +9,14 @@ namespace leo.Asset
     {
         public class SubMeshDescrption
         {
-            byte MaterialIndex { get; set; }
+            public byte MaterialIndex { get; set; }
             [StructLayout(LayoutKind.Sequential)]
             public struct LodDescription
             {
-                uint VertexNum { get; set; }
-                uint VertexBase { get; set; }
-                uint IndexNum { get; set; }
-                uint IndexBase { get; set; }
+                public uint VertexNum { get; set; }
+                public uint VertexBase { get; set; }
+                public uint IndexNum { get; set; }
+                public uint IndexBase { get; set; }
             }
 
             List<LodDescription> _lodsDescription = new List<LodDescription>();
@@ -26,7 +26,7 @@ namespace leo.Asset
         }
 
         List<Element> _vertexElements = new List<Element>();
-        public IEnumerable<Element> VertexElemnts => _vertexElements;
+        public IEnumerable<Element> VertexElements => _vertexElements;
 
         public EFormat IndexFormat { get; private set;}
 
@@ -55,5 +55,8 @@ namespace leo.Asset
         {
             _subMeshs.Add(desc);
         }
+
+        public uint VertexCount { get; set; }
+        public uint IndexCount { get; set; }
     }
 }

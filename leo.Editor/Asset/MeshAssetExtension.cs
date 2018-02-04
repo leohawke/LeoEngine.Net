@@ -117,7 +117,7 @@ namespace leo.Editor.Asset
             var vertex_elements = mesh.VertexElements;
             var VertexElmentsCount = vertex_elements.Count();
 
-            sw.Write(VertexElmentsCount);
+            sw.Write((byte)VertexElmentsCount);
 
             foreach(var vertex_element in vertex_elements)
             {
@@ -147,7 +147,8 @@ namespace leo.Editor.Asset
             sw.Write(mesh.IndexStream.ToArray());
 
             var submesh_count = mesh.SubMeshs.Count();
-            foreach(var submesh in mesh.SubMeshs)
+            sw.Write((byte)submesh_count);
+            foreach (var submesh in mesh.SubMeshs)
             {
                 sw.Write(submesh.MaterialIndex);
                 sw.Write(submesh.LodsDescription.Count());

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "UnityMeshConvert": {
+      "commandName": "Project",
+      "commandLineArgs": "Broadleaf_Desktop_LOD0.mesh.json",
+      "workingDirectory": "C:\\Users\\Leohawke\\Documents\\Unity Projects\\OldNewThing\\Assets"
+    }
+  }
+}

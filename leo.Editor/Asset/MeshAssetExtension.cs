@@ -141,7 +141,7 @@ namespace leo.Editor.Asset
 
             foreach(var vertex_stream in mesh.VertexStreams)
             {
-                sw.Write(vertex_stream.ToArray());
+                sw.Write(vertex_stream);
             }
 
             sw.Write(mesh.IndexStream.ToArray());

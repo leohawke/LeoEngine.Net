@@ -36,16 +36,16 @@ namespace leo.Asset
         List<SubMeshDescrption> _subMeshs = new List<SubMeshDescrption>();
         public IEnumerable<SubMeshDescrption> SubMeshs => _subMeshs;
 
-        List<ReadOnlySpan<byte>> _vertexStreams = new List<ReadOnlySpan<byte>>();
-        public IEnumerable<ReadOnlySpan<byte>> VertexStreams => _vertexStreams;
+        List<byte[]> _vertexStreams = new List<byte[]>();
+        public IEnumerable<byte[]> VertexStreams => _vertexStreams;
 
-        public void AddVertexStream(Element element, ReadOnlySpan<Byte> stream)
+        public void AddVertexStream(Element element,Span<Byte> stream)
         {
             _vertexElements.Add(element);
-            _vertexStreams.Add(stream);
+            _vertexStreams.Add(stream.ToArray());
         }
 
-        public void SetIndexStream(EFormat format, ReadOnlySpan<Byte> stream)
+        public void SetIndexStream(EFormat format, Span<Byte> stream)
         {
             _indexStream = stream.ToArray();
             IndexFormat = format;

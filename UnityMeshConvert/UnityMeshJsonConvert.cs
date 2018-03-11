@@ -33,6 +33,25 @@ namespace UnityMeshConvert
 
                 mesh.AddVertexStream(pos_element, stream.ToArray());
             }
+            var normals = ((JArray)unity_mesh["normals"]).ToObject<float3[]>();
+            using (var stream = new MemoryStream())
+            using (var bw = new BinaryWriter(stream))
+            {
+                foreach (var normal in normals)
+                {
+                    bw.Write(normal.x);
+                    bw.Write(normal.y);
+                    bw.Write(normal.z);
+                }
+                bw.Flush();
+
+                var normal_element = new leo.Platform.Render.Vertex.Element();
+                normal_element.Format = EFormat.EF_BGR32F;
+                normal_element.Usage = leo.Platform.Render.Vertex.Usage.Normal;
+                normal_element.UsageIndex = 0;
+
+                mesh.AddVertexStream(normal_element, stream.ToArray());
+            }
 
             var triangles = ((JArray)unity_mesh["triangles"]).ToObject<uint[]>();
             var index_format = EFormat.EF_R16UI;

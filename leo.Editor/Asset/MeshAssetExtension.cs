@@ -151,7 +151,7 @@ namespace leo.Editor.Asset
             foreach (var submesh in mesh.SubMeshs)
             {
                 sw.Write(submesh.MaterialIndex);
-                sw.Write(submesh.LodsDescription.Count());
+                sw.Write((byte)submesh.LodsDescription.Count());
 
                 var float3 = new byte[12];
                 var float2 = new byte[8];

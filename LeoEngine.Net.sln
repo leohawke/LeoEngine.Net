@@ -5,9 +5,13 @@ VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "leo.Engine", "leo.Engine\leo.Engine.csproj", "{44E5F0E1-6F98-4E95-AE15-C2F61B13378B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "leo.Editor", "leo.Editor\leo.Editor.csproj", "{C49B71E7-40B0-4C78-8654-94AD887D9463}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "leo.Editor", "leo.Editor\leo.Editor.csproj", "{C49B71E7-40B0-4C78-8654-94AD887D9463}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityMeshConvert", "UnityMeshConvert\UnityMeshConvert.csproj", "{66C01BB8-6855-4808-9968-F0E2C6A60768}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnityMeshConvert", "UnityMeshConvert\UnityMeshConvert.csproj", "{66C01BB8-6855-4808-9968-F0E2C6A60768}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlayGEMediaConvert", "KlayGEMediaConvert\KlayGEMediaConvert.csproj", "{6F6F1120-F594-4CA2-BB3A-42460A7CB811}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "leo.Scheme", "leo.Scheme\leo.Scheme.csproj", "{39F36FEB-6D6D-4D84-910E-F3962D7EDA03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +59,30 @@ Global
 		{66C01BB8-6855-4808-9968-F0E2C6A60768}.Release|x64.Build.0 = Release|Any CPU
 		{66C01BB8-6855-4808-9968-F0E2C6A60768}.Release|x86.ActiveCfg = Release|Any CPU
 		{66C01BB8-6855-4808-9968-F0E2C6A60768}.Release|x86.Build.0 = Release|Any CPU
+		{6F6F1120-F594-4CA2-BB3A-42460A7CB811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F6F1120-F594-4CA2-BB3A-42460A7CB811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F6F1120-F594-4CA2-BB3A-42460A7CB811}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6F6F1120-F594-4CA2-BB3A-42460A7CB811}.Debug|x64.Build.0 = Debug|Any CPU
+		{6F6F1120-F594-4CA2-BB3A-42460A7CB811}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6F6F1120-F594-4CA2-BB3A-42460A7CB811}.Debug|x86.Build.0 = Debug|Any CPU
+		{6F6F1120-F594-4CA2-BB3A-42460A7CB811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F6F1120-F594-4CA2-BB3A-42460A7CB811}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F6F1120-F594-4CA2-BB3A-42460A7CB811}.Release|x64.ActiveCfg = Release|Any CPU
+		{6F6F1120-F594-4CA2-BB3A-42460A7CB811}.Release|x64.Build.0 = Release|Any CPU
+		{6F6F1120-F594-4CA2-BB3A-42460A7CB811}.Release|x86.ActiveCfg = Release|Any CPU
+		{6F6F1120-F594-4CA2-BB3A-42460A7CB811}.Release|x86.Build.0 = Release|Any CPU
+		{39F36FEB-6D6D-4D84-910E-F3962D7EDA03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39F36FEB-6D6D-4D84-910E-F3962D7EDA03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39F36FEB-6D6D-4D84-910E-F3962D7EDA03}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{39F36FEB-6D6D-4D84-910E-F3962D7EDA03}.Debug|x64.Build.0 = Debug|Any CPU
+		{39F36FEB-6D6D-4D84-910E-F3962D7EDA03}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{39F36FEB-6D6D-4D84-910E-F3962D7EDA03}.Debug|x86.Build.0 = Debug|Any CPU
+		{39F36FEB-6D6D-4D84-910E-F3962D7EDA03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39F36FEB-6D6D-4D84-910E-F3962D7EDA03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39F36FEB-6D6D-4D84-910E-F3962D7EDA03}.Release|x64.ActiveCfg = Release|Any CPU
+		{39F36FEB-6D6D-4D84-910E-F3962D7EDA03}.Release|x64.Build.0 = Release|Any CPU
+		{39F36FEB-6D6D-4D84-910E-F3962D7EDA03}.Release|x86.ActiveCfg = Release|Any CPU
+		{39F36FEB-6D6D-4D84-910E-F3962D7EDA03}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

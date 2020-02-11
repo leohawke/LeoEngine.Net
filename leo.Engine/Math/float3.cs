@@ -64,5 +64,35 @@ namespace leo.Math
             y = yz.x;
             z = yz.y;
         }
+
+        public static float3 operator*(float3 lhs,float3 rhs)
+        {
+            return new float3(lhs.x * rhs.x, lhs.y * rhs.y, lhs.z * rhs.z);
+        }
+
+        public static float3 operator *(float3 lhs, float rhs)
+        {
+            return new float3(lhs.x * rhs, lhs.y * rhs, lhs.z * rhs);
+        }
+
+        public static float3 operator *(float rhs,float3 lhs)
+        {
+            return new float3(lhs.x * rhs, lhs.y * rhs, lhs.z * rhs);
+        }
+
+        public static float3 operator +(float3 lhs, float3 rhs)
+        {
+            return new float3(lhs.x + rhs.x, lhs.y + rhs.y, lhs.z + rhs.z);
+        }
+
+        public static float3 operator -(float3 lhs, float3 rhs)
+        {
+            return new float3(lhs.x - rhs.x, lhs.y - rhs.y, lhs.z - rhs.z);
+        }
+
+        public static float3 operator -(float3 rhs)
+        {
+            return new float3(- rhs.x, rhs.y,- rhs.z);
+        }
     }
 }

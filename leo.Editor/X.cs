@@ -9,5 +9,10 @@ namespace platform.Editor.Asset
         {
             mesh.Save(path);
         }
+
+        public static void SaveMaterialAsset(string path,MaterialAsset material)
+        {
+            material.Save(path);
+        }
     }
 }

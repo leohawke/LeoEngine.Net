@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "KlayGEMediaConvert": {
+      "commandName": "Project",
+      "commandLineArgs": "E:\\Code\\KlayGE\\KlayGE\\media\\Common\\sponza_crytek.meshml"
+    }
+  }
+}
